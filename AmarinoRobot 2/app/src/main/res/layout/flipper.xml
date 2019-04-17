@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/front"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Front" />
+
+            <Button
+                android:id="@+id/back"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/left"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Left" />
+
+            <Button
+                android:id="@+id/right"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Right" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/up"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="UP" />
+
+            <Button
+                android:id="@+id/down"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Down" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/spray"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Pinch in" />
+
+            <Button
+                android:id="@+id/pinchout"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Pinch out" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/dooropen"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Door Open" />
+
+            <Button
+                android:id="@+id/doorclose"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:text="Door Close" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Location"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <Spinner
+            android:id="@+id/spin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/on"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ON" />
+
+        <Button
+            android:id="@+id/OF"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OFF" />
+
+        <Button
+            android:id="@+id/stn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SendSTN" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/robostop"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="EMERGENCY" />
+
+
+    <ViewFlipper
+        android:id="@+id/vf"
+        android:layout_width="match_parent"
+        android:layout_height="200dp" />
+
+    <Button
+        android:id="@+id/stop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Stop Robo"
+        android:visibility="gone" />
+
+    <android.gesture.GestureOverlayView
+        android:id="@+id/gestures"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.0" />
+
+    <ImageView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_margin="10dp" />
+
+</LinearLayout>

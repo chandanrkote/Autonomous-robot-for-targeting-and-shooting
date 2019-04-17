@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:id="@+id/root_layout"
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent"
+	android:background="#111">
+
+	<LinearLayout android:id="@+id/button_bar"
+		android:orientation="horizontal" 
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="1px"
+		android:layout_alignParentBottom="true">
+					
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="100dp"
+			android:layout_weight="1"
+			android:layout_marginRight="1dp"
+			>
+			<ImageButton
+				android:id="@+id/add_device_btn"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" 
+				style="@style/image_button_with_bottom_text"
+				android:src="@drawable/add">
+			</ImageButton>
+			
+			<TextView
+				android:id="@+id/add_device_btn_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:text="@string/add_bt_device"
+				android:paddingBottom="3dp"
+				android:gravity="center"
+				android:textSize="@dimen/button_font_size">
+			</TextView>
+		</FrameLayout>
+		
+		<FrameLayout
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:layout_marginRight="1dp"
+			>
+			<ImageButton
+				android:id="@+id/monitoring_btn"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" 
+				style="@style/image_button_with_bottom_text"
+				android:src="@drawable/binocular_128">
+			</ImageButton>
+			
+			
+			
+			<TextView
+				android:id="@+id/monitoring_btn_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:text="@string/monitoring"
+				android:paddingBottom="3dp"
+				android:gravity="center"
+				android:textSize="@dimen/button_font_size">
+			</TextView>
+		</FrameLayout>
+		
+		 
+		<FrameLayout
+			android:id="@+id/settings_btn_layout"
+			android:layout_width="fill_parent"
+			android:layout_height="fill_parent"
+			android:layout_weight="1"
+			android:visibility="gone"
+			>
+			<ImageButton
+				android:id="@+id/settings_btn"
+				android:layout_height="fill_parent"
+				android:layout_width="fill_parent" 
+				style="@style/image_button_with_bottom_text"
+				android:src="@drawable/settings_128">
+			</ImageButton>
+			
+			<TextView
+				android:id="@+id/settings_btn_text"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="bottom"
+				android:text="Voice Commands"
+				android:paddingBottom="3dp"
+				android:gravity="center"
+				android:textSize="@dimen/button_font_size">
+			</TextView>
+		</FrameLayout>
+		
+		
+	</LinearLayout>
+	
+
+	<ListView android:id="@+id/android:list"
+		android:layout_width="fill_parent" 
+		android:layout_height="fill_parent"
+		android:layout_alignParentTop="true"
+		android:layout_above="@id/button_bar"
+		android:divider="#0000"
+		android:dividerHeight="2px"
+		android:drawSelectorOnTop="false"
+		
+		>
+	</ListView>
+
+
+	<FrameLayout android:id="@id/android:empty"
+		android:layout_width="fill_parent" 
+        android:layout_height="fill_parent"
+        android:layout_above="@id/button_bar"
+        >
+        
+        <ImageView 
+	        android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        android:src="@drawable/icon_background"
+	        android:layout_gravity="center"
+	        android:padding="20dp"
+	        android:scaleType="center"
+        />
+		        	
+		<TextView 
+        	android:layout_width="fill_parent" 
+	        android:layout_height="fill_parent"
+	        android:padding="6dp"
+	        android:textSize="15sp"
+	        android:text="@string/no_devices"/>
+
+	</FrameLayout>
+		
+	
+
+</RelativeLayout>
