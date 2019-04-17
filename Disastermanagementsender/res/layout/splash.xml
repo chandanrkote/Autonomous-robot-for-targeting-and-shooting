@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="#fff"
+    android:orientation="vertical" >
+         
+               
+    <TextView  
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000"
+        android:typeface="serif"
+        android:textStyle="bold"
+        android:text="@string/splash"
+	/>   
+	    	
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:id="@+id/tv"
+         android:textSize="18sp"
+        android:textColor="#000"
+        android:visibility="gone"
+        android:textStyle="italic"   
+        android:typeface="serif"  
+        android:text="Under the Guidance of:\n Mrs. Anitha P"
+	/>
+
+</LinearLayout>
